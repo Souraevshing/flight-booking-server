@@ -9,7 +9,12 @@ import { FlightsController } from './flights/flights.controller';
 import { FlightsModule } from './flights/flights.module';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), JwtModule, UserModule, FlightsModule],
+  imports: [
+    ConfigModule.forRoot({ isGlobal: true }),
+    JwtModule,
+    UserModule,
+    FlightsModule,
+  ],
   controllers: [AppController, FlightsController],
   providers: [AppService, FlightsService],
 })

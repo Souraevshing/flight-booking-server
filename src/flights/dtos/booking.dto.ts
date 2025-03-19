@@ -1,4 +1,4 @@
-import { BookingStatus, CabinClass, TripType } from '../utils/flight.enums';
+import { BookingStatus, CabinClass, TripType } from '../flights';
 
 export interface BookingDto {
   id: string;

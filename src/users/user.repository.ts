@@ -12,8 +12,8 @@ export class UserRepository {
 
   constructor(private configService: ConfigService) {
     this.supabase = createClient(
-      this.configService.get<string>('SUPABASE_URI') || '',
-      this.configService.get<string>('SUPABASE_SERVICE_KEY') || '',
+      this.configService.get<string>('SUPABASE_URL') || '',
+      this.configService.get<string>('SUPABASE_SERVICE_ROLE_KEY') || '',
     );
   }
 
