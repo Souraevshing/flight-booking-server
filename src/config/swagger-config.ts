@@ -8,8 +8,8 @@ export const config = new DocumentBuilder()
     {
       type: 'http',
       scheme: 'bearer',
-      bearerFormat: 'jwt',
-      name: 'jwt',
+      bearerFormat: 'JWT',
+      name: 'JWT',
       description: 'authenticate user with jwt token',
       in: 'header',
     },
